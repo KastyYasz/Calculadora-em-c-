@@ -1,0 +1,104 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Contracts;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Messaging;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace project1
+{
+    public class Program
+        
+       
+    {
+        static void Main()
+        {
+
+
+
+            while (true)
+            {
+                Console.WriteLine("Digite o valor de a \n");
+                string a = Console.ReadLine();
+
+                Console.WriteLine(" Digite o valor de b \n");
+                string b = Console.ReadLine();
+
+                Console.WriteLine("multiplicação = 1 // divisão = 2 // soma = 3 // subtração = 4 \n");
+                string conta = Console.ReadLine();
+
+
+                int resultado = int.Parse(conta);
+                int num1 = int.Parse(a);
+                int num2 = int.Parse(b);
+               
+
+
+
+                if (resultado == 1)
+                {
+
+                    resultado = num1 * num2;
+
+                }else if (resultado == 2)
+                {
+                     resultado = num1 / num2;
+                    
+                }else if(resultado == 3)
+                {
+                     resultado = num1 + num2;
+
+                }else if(resultado == 4){
+
+                    resultado = num1 - num2;
+                }
+
+                
+
+
+                Console.WriteLine("O resultado dos numeros é :" + resultado + "!");
+
+
+
+                Console.WriteLine("Deseja continua 1 = sim // 2 = não ?");
+                string voltar = Console.ReadLine();
+
+
+                char retornar = char.Parse(voltar);
+
+                if(retornar == 1)
+                {
+                    continue;
+                }
+                else if(retornar == 2)
+                {
+                    break;
+                }
+
+
+
+                Console.ReadKey();
+
+
+
+
+            }
+
+
+
+
+
+
+            
+
+        }
+
+       
+
+        
+    }
+
+
+}
